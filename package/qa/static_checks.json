@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "source_records": 62,
+  "python_syntax_files": 11,
+  "r_syntax_files": 51,
+  "all_selected_source_hashes_verified": true,
+  "all_untransformed_sources_byte_preserved": true,
+  "portable_builder_help_pass": true,
+  "aggregate_and_metadata_csv_inventory": [
+    {
+      "path": "corrected_version/overlay/01_Aktuelles_Manuskript/manuskript_v2/reporting_patch_20261004/fold_counts.csv",
+      "rows": 120,
+      "columns": [
+        "fraction",
+        "outer",
+        "inner",
+        "role",
+        "participants",
+        "events"
+      ]
+    },
+    {
+      "path": "reported_version/01_Aktuelles_Manuskript/manuskript_v2/table2_source.csv",
+      "rows": 15,
+      "columns": [
+        "metric",
+        "target",
+        "apparent",
+        "optimism_corrected",
+        "ci_lower",
+        "ci_upper",
+        "outer_success",
+        "nested_success",
+        "status"
+      ]
+    },
+    {
+      "path": "reported_version/01_Aktuelles_Manuskript/manuskript_v2/tableS7_tuning.csv",
+      "rows": 60,
+      "columns": [
+        "fraction",
+        "fold",
+        "model",
+        "target",
+        "arm",
+        "ratio",
+        "training_n_rounded",
+        "training_events_rounded",
+        "inner_log_score",
+        "failed_fits",
+        "attempted_fits",
+        "parameter"
+      ]
+    },
+    {
+      "path": "reported_version/01_Aktuelles_Manuskript/manuskript_v2/versions.csv",
+      "rows": 4,
+      "columns": [
+        "component",
+        "version"
+      ]
+    },
+    {
+      "path": "reported_version/02_Analyse/metadata/stage2_variables.csv",
+      "rows": 60,
+      "columns": [
+        "setup_file",
+        "variable",
+        "official_label",
+        "status"
+      ]
+    }
+  ],
+  "microdata_read": false,
+  "models_fitted_by_this_check": 0,
+  "fresh_machine_installation_tested": false
+}

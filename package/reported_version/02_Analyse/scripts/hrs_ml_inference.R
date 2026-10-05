@@ -1,0 +1,10 @@
+# User-run local HRS benchmark only. Never repeats the 300-scenario simulation.
+script<-sub('^--file=','',grep('^--file=',commandArgs(),value=TRUE)[1])
+directory<-dirname(normalizePath(script))
+source(file.path(directory,'hrs_ml_extension.R'))
+source(file.path(directory,'hrs_ml_equivalence.R'))
+args<-commandArgs(trailingOnly=TRUE)
+if(length(args)!=2L) stop('Usage: Rscript hrs_ml_inference.R PRIVATE_DATA_DIR OUTPUT_PARENT')
+out<-ml_main(c('inference',args),directory)
+ml_equivalence_report(out,file.path(out,'exploratory_equivalence'))
+message('Conditional exploratory inference saved. No exact or clinical equality claim.')

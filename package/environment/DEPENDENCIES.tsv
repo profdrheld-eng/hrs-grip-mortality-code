@@ -1,0 +1,14 @@
+component	version	status
+R	4.6.0	reported analysis and current local runtime
+survival	3.8.6	reported analysis and current local runtime; DESCRIPTION uses 3.8-6
+rpart	4.1.27	reported analysis and current local runtime
+xgboost	3.2.1.1	reported analysis and existing project library
+Matrix	1.7.5	current local transitive dependency only
+data.table	1.18.6.1	current local transitive dependency only
+jsonlite	2.0.0	current local transitive dependency only
+lattice	0.22.9	current local transitive dependency only
+Python	3.12.14	final local package and guard checks; table helpers use standard library
+GNU make	unrecorded	needed only to compile XGBoost from source
+C++17 compiler	unrecorded	needed only to compile XGBoost from source
+Cairo	available locally	used by PNG figure scripts
+shasum	available locally	provenance and diagnostics SHA-256 helper

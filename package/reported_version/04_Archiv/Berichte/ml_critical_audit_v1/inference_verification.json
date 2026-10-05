@@ -1,0 +1,9 @@
+{
+  "bootstrap_groups": 40,
+  "draws_per_group": 5000,
+  "tost_rows": 360,
+  "maximum_independent_recalculation_error": 5.551115123125783e-16,
+  "holm_families": 18,
+  "contrasts_per_family": 20,
+  "maximum_old_new_point_difference": 0.0
+}

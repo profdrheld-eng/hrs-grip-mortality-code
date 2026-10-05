@@ -1,0 +1,159 @@
+{
+  "status": "PASS_WITH_DECLARED_LIMITS",
+  "purpose": "Local technical review, not publication clearance",
+  "analysis_inputs": "Invented fixtures only",
+  "hrs_microdata_accessed": false,
+  "full_corrected_R_suite": {
+    "passed": 22,
+    "failed": 0,
+    "report": "corrected_all.json",
+    "synthetic_models_fitted": true
+  },
+  "ipcw_tie_assertions": 48,
+  "independent_statistical_test_blocks": 8,
+  "package_integrity": {
+    "cases_per_mode": 14,
+    "modes": [
+      "normal",
+      "-O",
+      "PYTHONOPTIMIZE=1"
+    ],
+    "status": "PASS"
+  },
+  "release_cli": {
+    "cases_per_mode": 10,
+    "modes": [
+      "normal",
+      "-O",
+      "PYTHONOPTIMIZE=1"
+    ],
+    "status": "PASS",
+    "final_builder_normal_mode_rechecked": true
+  },
+  "table_validation": {
+    "rejected_invalid_invocations": 60,
+    "accepted_valid_invocations": 6,
+    "modes": [
+      "normal",
+      "-O",
+      "PYTHONOPTIMIZE=1"
+    ],
+    "valid_outputs_byte_identical_to_legacy": true
+  },
+  "fixed_defects": [
+    "Integrity verification skipped under optimized Python",
+    "Untracked nested manifest and incomplete source-manifest coverage",
+    "Unverified materialization and symlink/partial-write hazards",
+    "Empty suite, reused reports and failed-launch reporting",
+    "Timeout leaving nested child processes",
+    "Python table checks skipped under optimization",
+    "Nonfinite or earlier contradictory contrast rows accepted",
+    "Synthetic previews sharing fixed temporary paths"
+  ],
+  "tested_runtime": {
+    "Python": "3.12.14",
+    "R": "4.6.0",
+    "platform": "macOS"
+  },
+  "source_hashes": {
+    "reported_version/02_Analyse/scripts/build_ml_paper_tables.py": "f1908733f1a6f2edc6325415836dd0aeb080d89937a83265c6b44596d3f24ca9",
+    "reported_version/02_Analyse/scripts/hrs_analysis.R": "8b9fc506934f22099306b227e3c57f8767ea25ad720b744e5dc1fb9d111e6dc2",
+    "reported_version/02_Analyse/scripts/hrs_diagnostics.R": "2b3a17dbca2893fce22b3ae6f64a51ebba90b1edad7e39033b311ed352581367",
+    "reported_version/02_Analyse/scripts/hrs_equivalence_sensitivity.R": "72db53fc8a944ae1580c7ec242f9686c010724ee1c50c2c9e05a1f200a434ab8",
+    "reported_version/02_Analyse/scripts/hrs_feasibility.R": "5dea7464924f8d4fbb7075c8b32aa735a81b49082a80fd9e6df4566ebfd28684",
+    "reported_version/02_Analyse/scripts/hrs_grip_change.R": "99a73c8cfb9d6b2957484b20a39f0a3b51dace389c0a8cac8984c6b717486c40",
+    "reported_version/02_Analyse/scripts/hrs_grip_history.R": "ce09433171995ae24bc9d3c78d1d8cb2046fd1640c02ca8685911cd21b501917",
+    "reported_version/02_Analyse/scripts/hrs_ml_equivalence.R": "be13ceb54a04d2ad69f6a540da712068f72b32aa2a9bfdbdcd08ab000adf6639",
+    "reported_version/02_Analyse/scripts/hrs_ml_extension.R": "7ae4af74b0a19c5fac65973cd399283e27a04594f546f17d89073be0b0945ebd",
+    "reported_version/02_Analyse/scripts/hrs_ml_figures.R": "03bc1fedd95557ffe13f790a7a47e285123811078d81e78ec7dbeb58e2eb3562",
+    "reported_version/02_Analyse/scripts/hrs_ml_inference.R": "eb3cf7c8d7e0e730e82ce432d82eaf05b58e0149fc97424a8bdd58f5f2a0da0c",
+    "reported_version/02_Analyse/scripts/hrs_ml_overview_preview.R": "db6e01ec69ca7138f629ca5d244bd5199a1d417d1a236340373ee603351f66c7",
+    "reported_version/02_Analyse/scripts/hrs_ml_person_figures_local.R": "e094ffec9db0ebf23b958200660973a31aabd0262400edfc749e7c795ce311fd",
+    "reported_version/02_Analyse/scripts/hrs_ml_point_figures.R": "330a5844aaf58aef8f250e65c5b57b84577c72e9d9e63789dc22d2507954d9ad",
+    "reported_version/02_Analyse/scripts/hrs_paper_figures.R": "f4ec2fc7a27041ed3b82c4736fd00bc338f29316e883372f8f0543b85bca37dd",
+    "reported_version/02_Analyse/scripts/hrs_prediction_validation.R": "0554ca4599ca5f2f26e827a43650722214922247cf0ba06ed6f90ac231f5ecba",
+    "reported_version/02_Analyse/scripts/hrs_provenance_overlap_audit.R": "88c8fcf13ec6206e3f6fbb02e7efe6bfb4fa76ecb1104b731dba4f8aadbcdc1b",
+    "reported_version/02_Analyse/scripts/hrs_reporting_patch.R": "3d432be45e42b29ff7e5ac2034ac4925125c523d530af01c380737883425662c",
+    "reported_version/02_Analyse/scripts/hrs_source_hierarchy.R": "b628bb39dcfcac194d879201b6558ce17696ddc270889d455bd74d6cf9930dce",
+    "reported_version/02_Analyse/scripts/hrs_stage2.R": "b32d20b69f8d43e4816e51e355784329b72af232302a2789aa3a6544c07a27ed",
+    "reported_version/02_Analyse/scripts/hrs_table1.R": "bbf708b8c051df0d023df9732ffb31b45ca4cfeada420c9908fe1c8c2fe365eb",
+    "reported_version/02_Analyse/scripts/hrs_tracker_formats.R": "2ee73456e00970b822755164c5b88162c589cbf62937f6500f0dc272eac40984",
+    "reported_version/02_Analyse/tests/test_analysis.R": "e0b223dd05a6c224eb18b82ce7e0ac148de5cf8fda6118a88758534c20da7b89",
+    "reported_version/02_Analyse/tests/test_diagnostics.R": "bfa14973faac2cea0c8212ba775bdcc8ad78580ea926441a27f80eeb7b7bc3ad",
+    "reported_version/02_Analyse/tests/test_equivalence_sensitivity.R": "6e28391272d2ec3ca13cdacdd1de959a94f1ce24edf77df655ef24bc844130cf",
+    "reported_version/02_Analyse/tests/test_grip_change.R": "c19ab73daf3eebb5bbd218ad4fa82a428454f62d0344adf3e472d7b1568f118c",
+    "reported_version/02_Analyse/tests/test_grip_history.R": "70f6d6fb79f7742547ecd0a6dab0c1a64f6271875bf00fb03d05d18a7b7620d8",
+    "reported_version/02_Analyse/tests/test_ml_equivalence.R": "79377c08b4e56421f1e5518a637aa2f416775b75d717deacc9f92769f536908a",
+    "reported_version/02_Analyse/tests/test_ml_extension.R": "8c305ae9c49c775f9932a53ce3944bf100627a564af220274da0cff2a946aa02",
+    "reported_version/02_Analyse/tests/test_ml_inference_integration.R": "00684ec26ff9f1cfbdc9aa0e5e2a38fe5f5074c01570ba3a41b2ad416681827a",
+    "reported_version/02_Analyse/tests/test_ml_point_figures.R": "09de0cddfc95215db757f6d3fb360cded3c0925f40f51cc4da73d86a53c39880",
+    "reported_version/02_Analyse/tests/test_ml_predictor_separation.R": "e108dfefa9d8658e7b45e20f5e2867e3827d8ee60fdb3419d84299216884c170",
+    "reported_version/02_Analyse/tests/test_paper_figures.R": "2cee594f1b51236c0494be86b82b39b380fe060207f9302d54ffd67ec288f3f6",
+    "reported_version/02_Analyse/tests/test_prediction_validation.R": "b72900f0dc375179751c1c7294f29c0b8f68b326f441fe6b9e322fabe5287631",
+    "reported_version/02_Analyse/tests/test_provenance_overlap.R": "5bb6bf69c4f00010c82d2c11bcce016722804cedacd87de7192b1108cfe0886b",
+    "reported_version/02_Analyse/tests/test_reporting_patch.R": "ea584ed60ba28b4e0abbb9e8fc66bdd93639723f7c0f9c0cf0f09a4c9c54ba7f",
+    "reported_version/02_Analyse/tests/test_source_hierarchy.R": "d3850576d90ea68e3ce1beb2e92706053ba6faeacb6e50310ec1ce05a7a6b37e",
+    "reported_version/02_Analyse/tests/test_stage2.R": "836b33812ec479f8f4ebf28a443dea4223f99d12d3fa517ee1bffc6eb43e3781",
+    "reported_version/02_Analyse/tests/test_synthetic.R": "4753618608c8735ae19f8f07684feee15c1a1787025b77d64f74e8e1b370b500",
+    "reported_version/02_Analyse/tests/test_table1.R": "2257d6b2187a011fb1c14d6c88515c65079652be217576083983acfc14254fdb",
+    "reported_version/02_Analyse/tests/test_tracker_csv.R": "2e834d88d4fd9463157ab09dd28e0d2e18862f880950c30843272a818d534050",
+    "reported_version/02_Analyse/tests/test_tracker_formats.R": "e555778cc0b0266ec98fc5da84f8c36ea348e45ea9345bf0b5d82ef1259d679a",
+    "reported_version/02_Analyse/metadata/stage2_variables.csv": "99967f2cadc57d3a1ee8a908f948554e5a268b34332ab54ed3806a3bb6d675b5",
+    "reported_version/01_Aktuelles_Manuskript/manuskript_v2/table2_source.csv": "54cc2619ac4678ec4a561c7c98ee97439e0383eb52eaee6f22a3a581e2c3f7b5",
+    "reported_version/01_Aktuelles_Manuskript/manuskript_v2/tableS7_tuning.csv": "875ba177ad6e0602a7cdddc77bbfcf4d1891f4e49cf908a43783a0f3e3e54d57",
+    "reported_version/01_Aktuelles_Manuskript/manuskript_v2/versions.csv": "9ce94df08c0b208024b6d4ae2adf6ab061d0e3689e67213a6538b9840a727e59",
+    "reported_version/01_Aktuelles_Manuskript/manuskript_v2/build_figure3.R": "9ee581a67ebe7d25429bd8e16a25e23b3d90cf55bb95875018a26a4c7dabafe6",
+    "reported_version/01_Aktuelles_Manuskript/manuskript_v2/build_figure_s1.R": "6d04ebad91171fe891adb9178eefab6eaff7d110c4d2433404eddd15481aaa8c",
+    "reported_version/01_Aktuelles_Manuskript/manuskript_v2/build_package.py": "9688f25c5f43568f9a934f71ac585ccae269e5846e2cc7f0718ffed5695e7dff",
+    "reported_version/04_Archiv/Berichte/ml_critical_audit_v1/inference_verification.json": "dc76f10debd993be6af9efb877955ffa07c126f7670d5aa88f5ed44015ede58b",
+    "corrected_version/overlay/02_Analyse/scripts/hrs_prediction_validation.R": "bfc3539a8caf5bc27eb67ae45de290ffca823fa101459825720275a5c8a62fcd",
+    "corrected_version/overlay/02_Analyse/scripts/hrs_ml_extension.R": "4d3d0051f5bfa50a4778201800e52a96bd6b039e6d4cef5c11bc5b5f01923f89",
+    "corrected_version/overlay/02_Analyse/scripts/build_ml_paper_tables.py": "13658ada8134d71450e0ca83f89e3b494c1f5e75b6db9b99cf1e1bf88e8e0b48",
+    "corrected_version/overlay/01_Aktuelles_Manuskript/manuskript_v2/build_package.py": "1acb507a9abaadc1eb66b16131b2bc31ac894daf8d70a478b25835afa9280948",
+    "corrected_version/overlay/02_Analyse/tests/test_ipcw_ties.R": "426100970c21a3c23fd5c7f01e47049480e335c1004c6a9ea2642d4de9e78234",
+    "corrected_version/overlay/02_Analyse/tests/test_python_table_validation.py": "3c9569f750a17c47d64e2652c99eb14f9f8414ef00c047e57951d1e08ba09f78",
+    "corrected_version/overlay/02_Analyse/scripts/hrs_ipcw_impact_audit.R": "eaee8942bef38f344907d6fd21ca47d9949110236e3316e7505a214848173475",
+    "corrected_version/overlay/02_Analyse/tests/test_ipcw_impact_audit.R": "e4f6dc6580609306f14cddc5a8ec43ab530399b9280fe9a7826e397a29544b3a",
+    "corrected_version/overlay/01_Aktuelles_Manuskript/manuskript_v2/reporting_patch_20261004/fold_counts.csv": "831308b9b718a7446f7b991585de0482ea77e472a453b95ac2109d1f6ecb3cb6",
+    "corrected_version/overlay/03_Dokumentation/IPCW_Korrektur_2026-10-04/legacy_sources/hrs_prediction_validation.R": "0554ca4599ca5f2f26e827a43650722214922247cf0ba06ed6f90ac231f5ecba",
+    "corrected_version/overlay/03_Dokumentation/IPCW_Korrektur_2026-10-04/legacy_sources/hrs_ml_extension.R": "7ae4af74b0a19c5fac65973cd399283e27a04594f546f17d89073be0b0945ebd",
+    "corrected_version/overlay/03_Dokumentation/IPCW_Korrektur_2026-10-04/legacy_sources/sha256.json": "9c7864f25995a02cb06dd1c4123cdd9105218a89d2ef941e8863b354931859bb"
+  },
+  "helper_hashes": {
+    "materialize_version.py": "7edbab9f4b18725f1de36e2e7a1608c35e09945e858cd000a775117fd836eb5c",
+    "test_release_cli.py": "ef6ed51da2c779a01b8ebefd952bb26890b1a9e83809de4bcd0c4c5d508ad755",
+    "verify_local_package.py": "85597965aa4bebc84e02c0710452e2126c7a87ae58cabd5f7f6d5025d02e13b4",
+    "build_local_package.py": "f425182dc29bd9d549986d2ff107ef340cca6493d19d16cb547c6ddeaa1c5ac8",
+    "run_synthetic_tests.py": "60a8febf64dbed5607fe19c4b6a08c67770b3e34d7c812d318b85381846360b1",
+    "test_package_integrity.py": "fb0bf6d74abb158f703e581bbcea8e13aa970c59f84a915caa533ca3fd55b3d1"
+  },
+  "historical_QA_records": [
+    "reported_quick.json",
+    "corrected_quick.json",
+    "corrected_regression.json"
+  ],
+  "original_reviewed_archive_sha256": "9fb8cbeeb4857adb217f684e7c49a947f5e8ddfd7fad715f259c53d499d15c0a",
+  "limits": [
+    "Real HRS weight changes confirmed. Corrected bootstrap validation, calibration and ML results remain pending.",
+    "No guarantee of complete defect absence or favorable peer review",
+    "No fresh-machine installation or full cross-platform verification",
+    "No complete recovered historical training/resampling environment or objects",
+    "Known historical defects intentionally retained in reported_version",
+    "Full-pipeline uncertainty is not established by fixed-prediction tests",
+    "Local integrity checks assume a trusted unchanged package, not hostile concurrent writers",
+    "Historical nested R CLI fixtures require a whitespace-free temporary directory"
+  ],
+  "publication": {
+    "github_created": false,
+    "uploaded": false,
+    "release_authorized": false,
+    "author_metadata": "Deferred to author team",
+    "reviewer_access_archive_and_reuse_terms": "Not yet selected"
+  },
+  "user_run_impact_audit": {
+    "status": "COMPLETE",
+    "weight_combinations_changed": 72,
+    "primary_apparent_replay": "SUCCESS",
+    "full_corrected_results_available": false
+  }
+}

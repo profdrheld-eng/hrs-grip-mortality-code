@@ -1,0 +1,61 @@
+setup_file,variable,official_label,status
+TRK2022TR_R.sas,HHID,HOUSEHOLD IDENTIFIER,metadata_present_values_not_checked
+TRK2022TR_R.sas,PN,PERSON NUMBER,metadata_present_values_not_checked
+TRK2022TR_R.sas,OVPN,OVERLAP CASE: OLD PN,metadata_present_values_not_checked
+TRK2022TR_R.sas,OVHHID,OVERLAP CASE: OLD HHID,metadata_present_values_not_checked
+TRK2022TR_R.sas,OVYEAR,OVERLAP CASE: FIRST YEAR OF NEW HHID AND PN,metadata_present_values_not_checked
+TRK2022TR_R.sas,OVRESULT,OVERLAP CASE: RESULT CODE,metadata_present_values_not_checked
+TRK2022TR_R.sas,VERSION,TRACKER FILE VERSION NUMBER,metadata_present_values_not_checked
+TRK2022TR_R.sas,OAGE,AGE AT 2014 INTERVIEW,metadata_present_values_not_checked
+TRK2022TR_R.sas,SEX,SEX,metadata_present_values_not_checked
+TRK2022TR_R.sas,MIWYEAR,2010 INTERVIEW YEAR,metadata_present_values_not_checked
+TRK2022TR_R.sas,MIWMONTH,2010 INTERVIEW MONTH,metadata_present_values_not_checked
+TRK2022TR_R.sas,OIWYEAR,2014 INTERVIEW YEAR,metadata_present_values_not_checked
+TRK2022TR_R.sas,OIWMONTH,2014 INTERVIEW MONTH,metadata_present_values_not_checked
+TRK2022TR_R.sas,OIWTYPE,2014 INTERVIEW TYPE,metadata_present_values_not_checked
+TRK2022TR_R.sas,OIWMODE,2014 INTERVIEW MODE,metadata_present_values_not_checked
+TRK2022TR_R.sas,OIWWAVE,2014 WHETHER INTERVIEWED IN THE WAVE,metadata_present_values_not_checked
+TRK2022TR_R.sas,NYEAR,NDI YEAR OF DEATH,metadata_present_values_not_checked
+TRK2022TR_R.sas,NMONTH,NDI MONTH OF DEATH,metadata_present_values_not_checked
+TRK2022TR_R.sas,NSCORE,NDI MATCH SCORE,metadata_present_values_not_checked
+TRK2022TR_R.sas,EXDEATHYR,YEAR OF DEATH,metadata_present_values_not_checked
+TRK2022TR_R.sas,EXDEATHMO,MONTH OF DEATH,metadata_present_values_not_checked
+TRK2022TR_R.sas,EXDODSOURCE,SOURCE OF EXIT DATE OF DEATH,metadata_present_values_not_checked
+TRK2022TR_R.sas,KNOWNDECEASEDYR,KNOWN DECEASED - YEAR,metadata_present_values_not_checked
+TRK2022TR_R.sas,KNOWNDECEASEDMO,KNOWN DECEASED - MONTH,metadata_present_values_not_checked
+TRK2022TR_R.sas,KNOWNDECEASEDSOURCE,KNOWN DECEASED - SOURCE,metadata_present_values_not_checked
+TRK2022TR_R.sas,LASTALIVEYR,LAST ALIVE - YEAR,metadata_present_values_not_checked
+TRK2022TR_R.sas,LASTALIVEMO,LAST ALIVE - MONTH,metadata_present_values_not_checked
+TRK2022TR_R.sas,LASTALIVESOURCE,LAST ALIVE - SOURCE,metadata_present_values_not_checked
+TRK2022TR_R.sas,OPMWGTR,RESPONDENT WEIGHT FOR THE 2014 PHYSICAL MEASURES SUBSAMPLE,metadata_present_values_not_checked
+TRK2022TR_R.sas,STRATUM,STRATUM ID,metadata_present_values_not_checked
+TRK2022TR_R.sas,SECU,SAMPLING ERROR COMPUTATION UNIT,metadata_present_values_not_checked
+H14A_R.sas,OA500,DATE OF INTERVIEW - MONTH,metadata_present_values_not_checked
+H14A_R.sas,OA501,DATE OF INTERVIEW - YEAR,metadata_present_values_not_checked
+H14C_R.sas,OC001,RATE HEALTH,metadata_present_values_not_checked
+H14C_R.sas,OC005,HIGH BLOOD PRESSURE,metadata_present_values_not_checked
+H14C_R.sas,OC010,DIABETES,metadata_present_values_not_checked
+H14C_R.sas,OC018,CANCER OF ANY KIND EXCLUDING SKIN,metadata_present_values_not_checked
+H14C_R.sas,OC030,LUNG DISEASE,metadata_present_values_not_checked
+H14C_R.sas,OC036,HEART CONDITION,metadata_present_values_not_checked
+H14C_R.sas,OC053,STROKE,metadata_present_values_not_checked
+H14C_R.sas,OC116,EVER SMOKE,metadata_present_values_not_checked
+H14C_R.sas,OC117,SMOKE CIGARETTES NOW,metadata_present_values_not_checked
+H14PR_R.sas,OZ076,R EVER INTERVIEWED,metadata_present_values_not_checked
+H14PR_R.sas,OZ205,R REPORTED THAT S/HE EVER SMOKED,metadata_present_values_not_checked
+H14I_R.sas,OPMELIG,2014 PHYSICAL MEASURES ELIGIBILITY,metadata_present_values_not_checked
+H14I_R.sas,OI800,PHYSICAL MEASURES FTF IW,metadata_present_values_not_checked
+H14I_R.sas,OI816,LEFT HAND FIRST,metadata_present_values_not_checked
+H14I_R.sas,OI851,RIGHT HAND FIRST,metadata_present_values_not_checked
+H14I_R.sas,OI852,LEFT HAND SECOND,metadata_present_values_not_checked
+H14I_R.sas,OI853,RIGHT HAND SECOND,metadata_present_values_not_checked
+H14I_R.sas,OI817,GRIP R EFFORT,metadata_present_values_not_checked
+H14I_R.sas,OI818,HAND STRENGTH TEST R POSITION,metadata_present_values_not_checked
+H14I_R.sas,OI834,HEIGHT MEASURMENT,metadata_present_values_not_checked
+H14I_R.sas,OI841,WEIGHT POUNDS MEASURMENT,metadata_present_values_not_checked
+H10I_R.sas,MI816,LEFT HAND FIRST,metadata_present_values_not_checked
+H10I_R.sas,MI851,RIGHT HAND FIRST,metadata_present_values_not_checked
+H10I_R.sas,MI852,LEFT HAND SECOND,metadata_present_values_not_checked
+H10I_R.sas,MI853,RIGHT HAND SECOND,metadata_present_values_not_checked
+H10I_R.sas,MI817,GRIP R EFFORT,metadata_present_values_not_checked
+H10I_R.sas,MI818,HAND STRENGTH TEST R POSITION,metadata_present_values_not_checked

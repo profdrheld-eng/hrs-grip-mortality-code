@@ -1,0 +1,65 @@
+{
+  "version": "corrected",
+  "suite": "quick",
+  "input": "artificial fixtures only",
+  "hrs_data_accessed": false,
+  "results": [
+    {
+      "test": "test_synthetic.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.178,
+      "output": "Synthetic parser, duplicate-ID, grip and merge checks passed.\nSynthetic rounded-report and small-cell checks passed.\nSynthetic mortality-diagnostic checks passed.\nSynthetic import-audit checks passed.\nSynthetic skipped-column, metadata-agreement and empty-file checks passed.\nSynthetic structural-format and output-privacy checks passed.\n"
+    },
+    {
+      "test": "test_tracker_formats.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.125,
+      "output": "Synthetic format comparison and mismatched-key checks passed.\n"
+    },
+    {
+      "test": "test_tracker_csv.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.173,
+      "output": "Synthetic CSV import, missingness, version, range and ID checks passed.\nSynthetic full workflow and stale-output protection checks passed.\nLocal aggregate report written. No person-level outputs saved.\n"
+    },
+    {
+      "test": "test_stage2.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.239,
+      "output": "Synthetic month, horizon and source-conflict checks passed.\nSynthetic full Stage2 run, suppressed output and failure-status checks passed.\nStage2 aggregate reports written. No person-level outputs saved.\n"
+    },
+    {
+      "test": "test_source_hierarchy.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.104,
+      "output": "Synthetic source priority, conflicts, restricted fallback and imputation checks passed.\n"
+    },
+    {
+      "test": "test_equivalence_sensitivity.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.131,
+      "output": "Interval boundaries, invalid inputs, source preservation and failure status passed.\nAggregate sensitivity report written. No models refitted or individual data read.\n"
+    },
+    {
+      "test": "test_ml_equivalence.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.099,
+      "output": "PASS: bootstrap TOST tails, normal oracle, nonzero equivalence, failure guards, strict bounds.\n"
+    },
+    {
+      "test": "test_provenance_overlap.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.11,
+      "output": "Synthetic overlap, invalid-code, privacy and release-header checks passed.\n"
+    }
+  ],
+  "status": "PASS"
+}

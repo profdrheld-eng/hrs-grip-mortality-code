@@ -1,0 +1,65 @@
+--- a/02_Analyse/scripts/build_ml_paper_tables.py
++++ b/02_Analyse/scripts/build_ml_paper_tables.py
+@@ -10,16 +10,21 @@
+     source, output = Path(source).resolve(), Path(output).resolve()
+     if output == source or output in source.parents:
+         raise ValueError('Separate manuscript output required')
+-    assert (source / 'STATUS.txt').read_text().startswith('SUCCESS:')
++    if not (source / 'STATUS.txt').read_text().startswith('SUCCESS:'):
++        raise ValueError('Successful source benchmark required')
+     names = ['benchmark_metrics', 'benchmark_paired', 'benchmark_tuning',
+              'association_curves', 'simulation_summary', 'simulation_status']
+     data = {name: list(csv.DictReader((source / (name + '.csv')).open())) for name in names}
+     m = [r for r in data['benchmark_metrics'] if float(r['fraction']) == 1]
+-    assert len(m) == 12
+-    assert len({(r['model'], r['target'], r['arm']) for r in m}) == 12
+-    assert all(r['status'] == 'OK' for r in m)
++    if not len(m) == 12:
++        raise ValueError('Exactly 12 full-training model variants required')
++    if not len({(r['model'], r['target'], r['arm']) for r in m}) == 12:
++        raise ValueError('Model variants must be unique')
++    if not all(r['status'] == 'OK' for r in m):
++        raise ValueError('All model variants must have OK status')
+     contrasts = [r for r in data['benchmark_paired'] if float(r['fraction']) == 1 and r['metric'] in ('auc', 'brier')]
+-    assert len(contrasts) == 40
++    if not len(contrasts) == 40:
++        raise ValueError('Exactly 40 paired AUC/Brier contrasts required')
+     lookup = {(r['model'], r['target'], r['arm']): r for r in m}
+     for r in contrasts:
+         a = lookup[r['model'], r['target'], r['arm']]
+@@ -29,7 +34,8 @@
+             b = lookup[r['model'], r['target'], 'original']
+         else:
+             b = lookup[r['reference_model'], r['target'], r['arm']]
+-        assert abs(float(a[r['metric']]) - float(b[r['metric']]) - float(r['difference'])) < 1e-12
++        if not abs(float(a[r['metric']]) - float(b[r['metric']]) - float(r['difference'])) < 1e-12:
++            raise ValueError('Paired contrast does not match absolute model estimates')
+     label = {'weibull': 'Weibull splines', 'neural': 'Neural AFT', 'xgboost': 'XGBoost AFT'}
+     def fmt(x):
+         return f'{float(x):.6f}'
+--- a/01_Aktuelles_Manuskript/manuskript_v2/build_package.py
++++ b/01_Aktuelles_Manuskript/manuskript_v2/build_package.py
+@@ -75,14 +75,19 @@
+ for name in ['benchmark_diagnostics.csv','benchmark_calibration.csv','versions.csv','preflight_counts.csv']:savecsv(name,read(INF/name))
+ # Check every AUC/Brier contrast against the independently stored absolute estimates.
+ lookup={(r['model'],r['target'],r['arm']):r for r in m};maxerr=0
+-for r in unique.values():
++for r in e:
+     model,target,arm,metric=r['model'],r['target'],r['arm'],r['metric']
+     if r['contrast']=='prior_minus_current':a,b=lookup[model,'prior',arm],lookup[model,'current',arm]
+     elif r['contrast']=='augmented_minus_original':a,b=lookup[model,target,'augmented'],lookup[model,target,'original']
+     else:a,b=lookup[model,target,arm],lookup['weibull',target,arm]
+-    maxerr=max(maxerr,abs(float(a[metric])-float(b[metric])-float(r['estimate'])))
+-assert len(m)==12 and len(e)==360 and len(unique)==40 and maxerr<1e-12
+-assert all(r['status']=='OK' for r in m)
++    error=abs(float(a[metric])-float(b[metric])-float(r['estimate']))
++    if not error<1e-12:
++        raise ValueError('Paired contrast does not match finite absolute model estimates')
++    maxerr=max(maxerr,error)
++if not (len(m)==12 and len(e)==360 and len(unique)==40 and maxerr<1e-12):
++    raise ValueError('Model, equivalence or paired-contrast validation failed')
++if not all(r['status']=='OK' for r in m):
++    raise ValueError('All model variants must have OK status')
+ # Full inference independent verification already archived, preserve as provenance.
+ shutil.copyfile(Path(args.prior_inference_verification),OUT/'prior_inference_verification.json')
+ # Retain the verified aggregate evidence from the targeted reporting follow-up.

@@ -1,0 +1,67 @@
+--- a/02_Analyse/scripts/hrs_prediction_validation.R
++++ b/02_Analyse/scripts/hrs_prediction_validation.R
+@@ -9,7 +9,8 @@
+   g <- rep(1,nrow(d))
+   evaluation <- ifelse(event,time,5)
+   for(ct in censor_times) {
+-    at_risk <- sum(time>=ct)
++    # Deaths at ct precede censoring, consistent with evaluation at G(T-).
++    at_risk <- sum(time>ct | (!event & time==ct))
+     jump <- 1-sum(!event & time==ct)/at_risk
+     g[evaluation>ct] <- g[evaluation>ct]*jump
+   }
+--- a/02_Analyse/scripts/hrs_ml_extension.R
++++ b/02_Analyse/scripts/hrs_ml_extension.R
+@@ -214,8 +214,9 @@
+   }
+   tt <- time(train);event <- is.finite(test$hi);eval <- ifelse(event,time(test),5)
+   censor <- !is.finite(train$hi);g <- rep(1,nrow(test))
++  # Deaths at ct precede censoring, consistent with evaluation at G(T-).
+   for(ct in sort(unique(tt[censor & tt<5])))
+-    g[eval>ct] <- g[eval>ct]*(1-sum(censor & tt==ct)/sum(tt>=ct))
++    g[eval>ct] <- g[eval>ct]*(1-sum(censor & tt==ct)/sum(tt>ct | (censor & tt==ct)))
+   known <- event | test$lo>=5
+   if(any(g[known]<.05)) stop('IPCW positivity insufficient.')
+   data.frame(y=as.numeric(event),weight=ifelse(known,1/g,0))
+@@ -274,7 +275,11 @@
+       mean(!is.finite(syn$hi)&syn$lo<5)-mean(!is.finite(real$hi)&real$lo<5))))
+ }
+ 
+-ml_benchmark <- function(d,cfg,out=NULL) {
++ml_benchmark <- function(d,cfg,out=NULL,selection_provider=NULL,prediction_provider=NULL,
++                         weight_function=ml_weights) {
++  if(!is.null(selection_provider)&&!is.function(selection_provider)) stop('Invalid selection_provider.')
++  if(!is.null(prediction_provider)&&!is.function(prediction_provider)) stop('Invalid prediction_provider.')
++  if(!is.function(weight_function)) stop('Invalid weight_function.')
+   ml_validate(d);fold<-ml_folds(d,cfg$outer,cfg$seed)
+   combos<-expand.grid(model=cfg$models,target=c('current','prior'),arm=c('original','augmented'),stringsAsFactors=FALSE)
+   metrics<-paired<-calibration<-tuning<-diagnostics<-bootstrap_differences<-list()
+@@ -289,13 +294,24 @@
+       groups<-head(groups,max(cfg$inner*2,ceiling(length(groups)*fraction)))
+       train<-train[train$household %in% groups,,drop=FALSE]
+       inner<-ml_folds(train,cfg$inner,cfg$seed+100+k)
+-      for(position in names(weights)) weights[[position]][fold==k,]<-ml_weights(train,test,position)
++      for(position in names(weights)) weights[[position]][fold==k,]<-weight_function(train,test,position)
+       for(j in seq_len(nrow(combos))) {
+         c<-combos[j,];seed<-cfg$seed+1000*k
+-        selected<-ml_tune(train,c$model,c$target,c$arm,cfg,inner,seed)
++        selected<-if(is.null(selection_provider)) ml_tune(train,c$model,c$target,c$arm,cfg,inner,seed) else
++          selection_provider(train=train,model=c$model,target=c$target,arm=c$arm,cfg=cfg,
++            inner=inner,seed=seed,fraction=fraction,fold=k)
+         prep<-ml_preprocess(train,c$target);aug<-ml_augment(train,selected$ratio,seed,c$target)
+-        fit<-ml_fit(aug,c$model,c$target,selected$parameter,seed,prep)
+-        pred<-ml_predict(fit,test)
++        if(is.null(prediction_provider)) {
++          fit<-ml_fit(aug,c$model,c$target,selected$parameter,seed,prep)
++          pred<-ml_predict(fit,test)
++        } else {
++          pred<-prediction_provider(train=train,aug=aug,test=test,model=c$model,target=c$target,
++            arm=c$arm,parameter=selected$parameter,seed=seed,preprocess=prep,fraction=fraction,fold=k)
++          if(!is.list(pred)||!is.numeric(pred$risk)||!is.numeric(pred$score)||
++             length(pred$risk)!=nrow(test)||length(pred$score)!=nrow(test)||
++             any(!is.finite(pred$risk))||any(!is.finite(pred$score))||
++             any(pred$risk<0|pred$risk>1)) stop('Invalid replay predictions.')
++        }
+         risk[fold==k,j]<-pred$risk;score[fold==k,j]<-pred$score
+         tuning[[length(tuning)+1]]<-data.frame(fraction=fraction,fold=k,c,
+           ratio=selected$ratio,training_n_rounded=10*round(nrow(train)/10),

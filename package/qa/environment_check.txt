@@ -1,0 +1,6 @@
+R: 4.6.0  (reported version: 4.6.0)
+survival : 3.8.6  (reported version: 3.8.6 )
+rpart : 4.1.27  (reported version: 4.1.27 )
+xgboost : 3.2.1.1  (reported version: 3.2.1.1 )
+Cairo graphics: TRUE 
+Diagnostics SHA-256 helper: TRUE 

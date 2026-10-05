@@ -1,0 +1,2 @@
+R 4.6.0
+[1] "Mersenne-Twister" "Inversion"        "Rejection"       

@@ -1,0 +1,1 @@
+SUCCESS: legacy apparent AUC/Brier reproduced. Corrected values use frozen parameters, not new fits.

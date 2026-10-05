@@ -1,0 +1,219 @@
+{
+  "version": "corrected",
+  "suite": "all",
+  "input": "artificial fixtures only",
+  "hrs_data_accessed": false,
+  "results": [
+    {
+      "test": "test_analysis.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.841,
+      "output": "Synthetic interval/censoring, model-likelihood and household-bootstrap checks passed.\nSynthetic month, horizon and source-conflict checks passed.\nSynthetic full Stage2 run, suppressed output and failure-status checks passed.\nSynthetic full command workflow and insufficient-sample gate passed.\nStage2 aggregate reports written. No person-level outputs saved.\nStage2 aggregate reports written. No person-level outputs saved.\nAnalysis reports written to analysis_v1. Inspect STATUS.txt. No person-level outputs saved.\n"
+    },
+    {
+      "test": "test_diagnostics.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 8.696,
+      "output": "Sequential flow, zero-grip diagnostics and calibration suppression checks passed.\nSynthetic association, reference, support, bootstrap and plot checks passed.\nSynthetic month, horizon and source-conflict checks passed.\nSynthetic full Stage2 run, suppressed output and failure-status checks passed.\nSynthetic import pipeline, output isolation and small-sample stop passed.\nSynthetic full CLI success, aggregate output and stale-result failure checks passed.\n[1] TRUE\nFull diagnostic CLI, output privacy schema, provenance and failure status passed.\nChange association household bootstrap 1/20\nChange association household bootstrap 1/20\nStage2 aggregate reports written. No person-level outputs saved.\nStage2 aggregate reports written. No person-level outputs saved.\nStage2 aggregate reports written. No person-level outputs saved.\n"
+    },
+    {
+      "test": "test_equivalence_sensitivity.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.132,
+      "output": "Interval boundaries, invalid inputs, source preservation and failure status passed.\nAggregate sensitivity report written. No models refitted or individual data read.\n"
+    },
+    {
+      "test": "test_grip_change.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 6.57,
+      "output": "Synthetic association, reference, support, bootstrap and plot checks passed.\nSynthetic month, horizon and source-conflict checks passed.\nSynthetic full Stage2 run, suppressed output and failure-status checks passed.\nSynthetic import pipeline, output isolation and small-sample stop passed.\nSynthetic full CLI success, aggregate output and stale-result failure checks passed.\nChange association household bootstrap 1/20\nChange association household bootstrap 1/20\nStage2 aggregate reports written. No person-level outputs saved.\nStage2 aggregate reports written. No person-level outputs saved.\n"
+    },
+    {
+      "test": "test_grip_history.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 11.093,
+      "output": "Fixed-current contrast, unchanged original model, null-history oracle and bootstrap passed.\nSynthetic association, reference, support, bootstrap and plot checks passed.\nSynthetic month, horizon and source-conflict checks passed.\nSynthetic full Stage2 run, suppressed output and failure-status checks passed.\nSynthetic import pipeline, output isolation and small-sample stop passed.\nSynthetic full CLI success, aggregate output and stale-result failure checks passed.\nHistory CLI, output isolation and failure status passed.\nChange association household bootstrap 1/20\nChange association household bootstrap 1/20\nChange association household bootstrap 1/20\nStage2 aggregate reports written. No person-level outputs saved.\nStage2 aggregate reports written. No person-level outputs saved.\n"
+    },
+    {
+      "test": "test_ipcw_diagnostics_refresh.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.584,
+      "output": "PASS: historical provenance/schema checks, invariant replay, permitted IPCW changes, exact9file export and fail-closed lifecycle. Zero HRS reads or model fits.\nConventional diagnostics only: four simple survival fits and one Turnbull curve. No bootstrap or ML.\nFinished. Return only: <R-temp>\nConventional diagnostics only: four simple survival fits and one Turnbull curve. No bootstrap or ML.\nConventional diagnostics only: four simple survival fits and one Turnbull curve. No bootstrap or ML.\nConventional diagnostics only: four simple survival fits and one Turnbull curve. No bootstrap or ML.\nConventional diagnostics only: four simple survival fits and one Turnbull curve. No bootstrap or ML.\nConventional diagnostics only: four simple survival fits and one Turnbull curve. No bootstrap or ML.\n"
+    },
+    {
+      "test": "test_ipcw_impact_audit.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.119,
+      "output": "PASS: synthetic tie, no-tie, train/test, suppression, failure and horizon checks.\n"
+    },
+    {
+      "test": "test_ipcw_ml_refresh.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 12.35,
+      "output": "                table rows max_absolute_difference tolerance status\n1 fraction1_selection   60                       0         0   PASS\n      table rows max_absolute_difference tolerance status\n1 synthetic    1                       0     1e-08   PASS\nPASS: complete stored-selection grid, mismatches/code-like parameters rejected, cache hit/integrity/freeze and strict legacy numeric replay. No model fits.\nPASS: distinct historical full/inference sources accepted, swapped sources rejected and full source tracked.\nPASS: real preflight rejects executable CONFIG; mocked complete recovery fits180, replays11tables, exports19allowlisted files/200000draws, suppresses private errors, detects changed inputs and cleans failed private graphics.\nSelected-model recovery: 180 planned fits. No tuning, association models or simulation rerun.\nHistorical 500/5000-draw evaluations are reproduced before corrected aggregates can be shared.\nFinished. Return only: <R-temp>\nSelected-model recovery: 180 planned fits. No tuning, association models or simulation rerun.\nHistorical 500/5000-draw evaluations are reproduced before corrected aggregates can be shared.\nSelected-model recovery: 180 planned fits. No tuning, association models or simulation rerun.\nHistorical 500/5000-draw evaluations are reproduced before corrected aggregates can be shared.\nSelected-model recovery: 180 planned fits. No tuning, association models or simulation rerun.\nHistorical 500/5000-draw evaluations are reproduced before corrected aggregates can be shared.\n"
+    },
+    {
+      "test": "test_ipcw_primary_refresh.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.505,
+      "output": "PASS: primary-only dispatch, exact seed/200/50, 15/270/9 rows, reference and source checks, fail-closed sharing, 18 margin rows. No model fits.\nPrimary refresh: 200 outer x (2 + 50 x 2) = 20,400 planned bootstrap survival fits, plus 18 scenario fits and calibration evaluations.\nSeed 20260926. No association, ML or simulation run. Detailed log stays in LOCAL_ONLY.\nPrimary refresh finished. Return only: <R-temp>\nPrimary refresh: 200 outer x (2 + 50 x 2) = 20,400 planned bootstrap survival fits, plus 18 scenario fits and calibration evaluations.\nSeed 20260926. No association, ML or simulation run. Detailed log stays in LOCAL_ONLY.\nPrimary refresh: 200 outer x (2 + 50 x 2) = 20,400 planned bootstrap survival fits, plus 18 scenario fits and calibration evaluations.\nSeed 20260926. No association, ML or simulation run. Detailed log stays in LOCAL_ONLY.\nPrimary refresh: 200 outer x (2 + 50 x 2) = 20,400 planned bootstrap survival fits, plus 18 scenario fits and calibration evaluations.\nSeed 20260926. No association, ML or simulation run. Detailed log stays in LOCAL_ONLY.\nPrimary refresh: 200 outer x (2 + 50 x 2) = 20,400 planned bootstrap survival fits, plus 18 scenario fits and calibration evaluations.\nSeed 20260926. No association, ML or simulation run. Detailed log stays in LOCAL_ONLY.\nPrimary refresh: 200 outer x (2 + 50 x 2) = 20,400 planned bootstrap survival fits, plus 18 scenario fits and calibration evaluations.\nSeed 20260926. No association, ML or simulation run. Detailed log stays in LOCAL_ONLY.\nPrimary refresh: 200 outer x (2 + 50 x 2) = 20,400 planned bootstrap survival fits, plus 18 scenario fits and calibration evaluations.\nSeed 20260926. No association, ML or simulation run. Detailed log stays in LOCAL_ONLY.\nPrimary refresh: 200 outer x (2 + 50 x 2) = 20,400 planned bootstrap survival fits, plus 18 scenario fits and calibration evaluations.\nSeed 20260926. No association, ML or simulation run. Detailed log stays in LOCAL_ONLY.\nPrimary refresh: 200 outer x (2 + 50 x 2) = 20,400 planned bootstrap survival fits, plus 18 scenario fits and calibration evaluations.\nSeed 20260926. No association, ML or simulation run. Detailed log stays in LOCAL_ONLY.\n"
+    },
+    {
+      "test": "test_ipcw_ties.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.372,
+      "output": "Independent oracle: survival 3.8.6 rttright\nPASS: midpoint single tie primary \nPASS: midpoint single tie ML \nPASS: midpoint constant-risk Brier arithmetic \nPASS: midpoint primary versus survival \nPASS: midpoint ML versus survival \nPASS: midpoint multiple tied events and censors primary \nPASS: midpoint multiple tied events and censors ML \nPASS: midpoint multiple primary versus survival \nPASS: midpoint multiple ML versus survival \nPASS: midpoint no ties primary \nPASS: midpoint no ties ML \nPASS: midpoint ML uses only training censoring distribution \nPASS: midpoint changing test-frame composition preserves weights \nPASS: midpoint administrative horizon primary \nPASS: midpoint administrative horizon ML \nPASS: lower single tie primary \nPASS: lower single tie ML \nPASS: lower constant-risk Brier arithmetic \nPASS: lower primary versus survival \nPASS: lower ML versus survival \nPASS: lower multiple tied events and censors primary \nPASS: lower multiple tied events and censors ML \nPASS: lower multiple primary versus survival \nPASS: lower multiple ML versus survival \nPASS: lower no ties primary \nPASS: lower no ties ML \nPASS: lower ML uses only training censoring distribution \nPASS: lower changing test-frame composition preserves weights \nPASS: lower administrative horizon primary \nPASS: lower administrative horizon ML \nPASS: upper single tie primary \nPASS: upper single tie ML \nPASS: upper constant-risk Brier arithmetic \nPASS: upper primary versus survival \nPASS: upper ML versus survival \nPASS: upper multiple tied events and censors primary \nPASS: upper multiple tied events and censors ML \nPASS: upper multiple primary versus survival \nPASS: upper multiple ML versus survival \nPASS: upper no ties primary \nPASS: upper no ties ML \nPASS: upper ML uses only training censoring distribution \nPASS: upper changing test-frame composition preserves weights \nPASS: upper administrative horizon primary \nPASS: upper administrative horizon ML \nPASS: event at upper horizon primary \nPASS: event at upper horizon ML \nPASS: ML preserves positivity failure after death-first tie handling \nIPCW tie regression: 48 passed; 0 failed.\n"
+    },
+    {
+      "test": "test_ml_equivalence.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.095,
+      "output": "PASS: bootstrap TOST tails, normal oracle, nonzero equivalence, failure guards, strict bounds.\n"
+    },
+    {
+      "test": "test_ml_extension.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 9.212,
+      "output": "PASS: gradient, likelihood, grouping, augmentation, all models, nested benchmark, curves, simulation, aggregate schemas.\nSynthetic outputs:  <R-temp> \nBenchmark: fraction 0.75, outer fold 1/2\nBenchmark: fraction 0.75, outer fold 2/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nAssociation change: 1/20\nAssociation history: 1/20\nSimulation null: 1/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nSimulation null: 2/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nSimulation small: 1/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nSimulation small: 2/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nSimulation interaction: 1/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nSimulation interaction: 2/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\n"
+    },
+    {
+      "test": "test_ml_inference_integration.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 3.629,
+      "output": "PASS: opt-in export leaves estimates unchanged; paired quantiles match; all 40 metric-contrasts and 360 margin tests exported.\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\n"
+    },
+    {
+      "test": "test_ml_point_figures.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 1.092,
+      "output": "Benchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nRecreating selected models: fold 1/2\nRecreating selected models: fold 2/2\nPASS: paired risk changes and replay match fresh synthetic benchmark.\nPASS: three synthetic-only renderers.\n"
+    },
+    {
+      "test": "test_ml_predictor_separation.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.551,
+      "output": "PASS: prior-grip perturbation changes only extended predictions: weibull \nPASS: prior-grip perturbation changes only extended predictions: neural \nPASS: prior-grip perturbation changes only extended predictions: xgboost \nPASS: independent weighted pairwise AUC oracle.\nPASS: independent censoring-weight oracle with an early censored test observation.\n"
+    },
+    {
+      "test": "test_ml_recovery_hooks.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 3.851,
+      "output": "PASS: default/provider equality, complete explicit keys, no held-out household leakage, cached no-fit/no-tune scoring, weight-only rescore and invalid-provider rejection.\nBenchmark: fraction 0.75, outer fold 1/2\nBenchmark: fraction 0.75, outer fold 2/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nBenchmark: fraction 0.75, outer fold 1/2\nBenchmark: fraction 0.75, outer fold 2/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nBenchmark: fraction 0.75, outer fold 1/2\nBenchmark: fraction 0.75, outer fold 2/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nBenchmark: fraction 0.75, outer fold 1/2\nBenchmark: fraction 0.75, outer fold 2/2\nBenchmark: fraction 1, outer fold 1/2\nBenchmark: fraction 1, outer fold 2/2\nBenchmark: fraction 0.75, outer fold 1/2\nBenchmark: fraction 0.75, outer fold 1/2\nBenchmark: fraction 0.75, outer fold 1/2\n"
+    },
+    {
+      "test": "test_paper_figures.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 9.647,
+      "output": "null device \n          1 \nNumeric labels, paired coordinates, unit conversion, range checks, output isolation and bold typography passed.\nSynthetic association, reference, support, bootstrap and plot checks passed.\nSynthetic month, horizon and source-conflict checks passed.\nSynthetic full Stage2 run, suppressed output and failure-status checks passed.\nSynthetic import pipeline, output isolation and small-sample stop passed.\nSynthetic full CLI success, aggregate output and stale-result failure checks passed.\nSynthetic six-figure rendering, original-refit check, complete CLI, output isolation, privacy schemas and failure handling passed.\nChange association household bootstrap 1/20\nChange association household bootstrap 1/20\nStage2 aggregate reports written. No person-level outputs saved.\nStage2 aggregate reports written. No person-level outputs saved.\nStage2 aggregate reports written. No person-level outputs saved.\n"
+    },
+    {
+      "test": "test_prediction_validation.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 1.803,
+      "output": "Synthetic Brier, weighted AUC, early censoring and horizon ties passed.\nSynthetic weighted-rank, prediction, nested-bootstrap and cluster-resampling checks passed.\nValidation outer bootstrap 1/6; inner repetitions: 3\nValidation outer bootstrap 5/6; inner repetitions: 3\n"
+    },
+    {
+      "test": "test_provenance_overlap.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.225,
+      "output": "Synthetic overlap, invalid-code, privacy and release-header checks passed.\n"
+    },
+    {
+      "test": "test_reporting_patch.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.558,
+      "output": "Synthetic date, follow-up, suppression and model-export round-trip checks passed.\n"
+    },
+    {
+      "test": "test_source_hierarchy.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.19,
+      "output": "Synthetic source priority, conflicts, restricted fallback and imputation checks passed.\n"
+    },
+    {
+      "test": "test_stage2.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.444,
+      "output": "Synthetic month, horizon and source-conflict checks passed.\nSynthetic full Stage2 run, suppressed output and failure-status checks passed.\nStage2 aggregate reports written. No person-level outputs saved.\n"
+    },
+    {
+      "test": "test_synthetic.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.274,
+      "output": "Synthetic parser, duplicate-ID, grip and merge checks passed.\nSynthetic rounded-report and small-cell checks passed.\nSynthetic mortality-diagnostic checks passed.\nSynthetic import-audit checks passed.\nSynthetic skipped-column, metadata-agreement and empty-file checks passed.\nSynthetic structural-format and output-privacy checks passed.\n"
+    },
+    {
+      "test": "test_table1.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.233,
+      "output": "PASS: mean/sample SD, change sign, categories, early censoring, primary/complementary suppression, missing-data and horizon guards, Markdown.\nPASS: synthetic export wrapper, reference check, aggregate-only schema and SUCCESS status; no model fit.\nAggregate Table 1 written to <R-temp>\n"
+    },
+    {
+      "test": "test_tracker_csv.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.216,
+      "output": "Synthetic CSV import, missingness, version, range and ID checks passed.\nSynthetic full workflow and stale-output protection checks passed.\nLocal aggregate report written. No person-level outputs saved.\n"
+    },
+    {
+      "test": "test_tracker_formats.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.126,
+      "output": "Synthetic format comparison and mismatched-key checks passed.\n"
+    }
+  ],
+  "status": "PASS",
+  "requested_tests": [
+    "test_analysis.R",
+    "test_diagnostics.R",
+    "test_equivalence_sensitivity.R",
+    "test_grip_change.R",
+    "test_grip_history.R",
+    "test_ipcw_diagnostics_refresh.R",
+    "test_ipcw_impact_audit.R",
+    "test_ipcw_ml_refresh.R",
+    "test_ipcw_primary_refresh.R",
+    "test_ipcw_ties.R",
+    "test_ml_equivalence.R",
+    "test_ml_extension.R",
+    "test_ml_inference_integration.R",
+    "test_ml_point_figures.R",
+    "test_ml_predictor_separation.R",
+    "test_ml_recovery_hooks.R",
+    "test_paper_figures.R",
+    "test_prediction_validation.R",
+    "test_provenance_overlap.R",
+    "test_reporting_patch.R",
+    "test_source_hierarchy.R",
+    "test_stage2.R",
+    "test_synthetic.R",
+    "test_table1.R",
+    "test_tracker_csv.R",
+    "test_tracker_formats.R"
+  ]
+}

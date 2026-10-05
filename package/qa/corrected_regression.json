@@ -1,0 +1,23 @@
+{
+  "version": "corrected",
+  "suite": "regression",
+  "input": "artificial fixtures only",
+  "hrs_data_accessed": false,
+  "results": [
+    {
+      "test": "test_ipcw_ties.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.368,
+      "output": "Independent oracle: survival 3.8.6 rttright\nPASS: midpoint single tie primary \nPASS: midpoint single tie ML \nPASS: midpoint constant-risk Brier arithmetic \nPASS: midpoint primary versus survival \nPASS: midpoint ML versus survival \nPASS: midpoint multiple tied events and censors primary \nPASS: midpoint multiple tied events and censors ML \nPASS: midpoint multiple primary versus survival \nPASS: midpoint multiple ML versus survival \nPASS: midpoint no ties primary \nPASS: midpoint no ties ML \nPASS: midpoint ML uses only training censoring distribution \nPASS: midpoint changing test-frame composition preserves weights \nPASS: midpoint administrative horizon primary \nPASS: midpoint administrative horizon ML \nPASS: lower single tie primary \nPASS: lower single tie ML \nPASS: lower constant-risk Brier arithmetic \nPASS: lower primary versus survival \nPASS: lower ML versus survival \nPASS: lower multiple tied events and censors primary \nPASS: lower multiple tied events and censors ML \nPASS: lower multiple primary versus survival \nPASS: lower multiple ML versus survival \nPASS: lower no ties primary \nPASS: lower no ties ML \nPASS: lower ML uses only training censoring distribution \nPASS: lower changing test-frame composition preserves weights \nPASS: lower administrative horizon primary \nPASS: lower administrative horizon ML \nPASS: upper single tie primary \nPASS: upper single tie ML \nPASS: upper constant-risk Brier arithmetic \nPASS: upper primary versus survival \nPASS: upper ML versus survival \nPASS: upper multiple tied events and censors primary \nPASS: upper multiple tied events and censors ML \nPASS: upper multiple primary versus survival \nPASS: upper multiple ML versus survival \nPASS: upper no ties primary \nPASS: upper no ties ML \nPASS: upper ML uses only training censoring distribution \nPASS: upper changing test-frame composition preserves weights \nPASS: upper administrative horizon primary \nPASS: upper administrative horizon ML \nPASS: event at upper horizon primary \nPASS: event at upper horizon ML \nPASS: ML preserves positivity failure after death-first tie handling \nIPCW tie regression: 48 passed; 0 failed.\n"
+    },
+    {
+      "test": "test_ipcw_impact_audit.R",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_seconds": 0.113,
+      "output": "PASS: synthetic tie, no-tie, train/test, suppression, failure and horizon checks.\n"
+    }
+  ],
+  "status": "PASS"
+}

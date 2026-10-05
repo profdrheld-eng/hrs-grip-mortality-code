@@ -1,0 +1,5 @@
+component,version
+R,4.6.0
+survival,3.8.6
+rpart,4.1.27
+xgboost,3.2.1.1
