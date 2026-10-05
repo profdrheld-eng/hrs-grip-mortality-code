@@ -10,6 +10,6 @@ The recovery scripts require the author's historical run directories and approve
 
 The package is not a historical lockfile or proof of cross-platform reproducibility. Tests use synthetic data. Conditional bootstrap intervals still omit full retraining uncertainty. No claim of absolute error freedom, clinical equivalence or universal model superiority is made.
 
-Author metadata, final author approval, reviewer access route, archival identifier and any reuse license remain author decisions. No GitHub repository or public archive was created.
+Author metadata, final author approval, reviewer access route, archival identifier and any reuse license remain author decisions. A separate private GitHub repository has been prepared for author review. No public repository access or public archive is available yet.
 
 All 26 R test scripts passed in a freshly materialized corrected package on 5 October 2026. See qa/corrected_all.json. These synthetic tests complement, but do not replace, the real-data aggregate checks.
