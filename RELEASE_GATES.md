@@ -1,8 +1,8 @@
 # Release gates
 
-## Required before public release
+## Release checks and retained boundaries
 
-- Author approval of the exact repository revision and the disclosed scientific limitations.
+- Author approved public GitHub access, MIT licensing and Copyright Steffen Held. Scientific limitations remain explicit.
 - Recorded author decision: MIT, Copyright (c) 2026 Steffen Held. No separate code DOI. Manuscript authorship remains separately confirmed.
 - Code, metadata and aggregate-only content review. HRS access terms remain separate from code licensing.
 - Package integrity checks, synthetic R tests, Python table validation and package-tool tests on a fresh checkout.
@@ -16,4 +16,4 @@ Historical analysis code and comparison fixtures are retained for traceability. 
 
 No automatic cloud analysis or CI installation is configured. Existing tests use invented data. Additional real-data runs must be executed privately by an authorized researcher. Confidential inputs are never needed to browse or inspect the code.
 
-Public access is not completed by creating a private repository. No DOI is planned under the author decision. Absence of confirmed defects is not a guarantee of error freedom or journal acceptance.
+Public access has been enabled. Release identity and anonymous access are checked separately. No DOI is planned under the author decision. Absence of confirmed defects is not a guarantee of error freedom or journal acceptance.

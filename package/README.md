@@ -1,6 +1,6 @@
 # HRS mortality prediction: verified correction package
 
-Prepared for private repository review on 5 October 2026. The author completed the primary, ML and diagnostic IPCW correction runs. Their released aggregate outputs were verified and integrated in the manuscript. This package contains code, artificial-data tests, variable metadata and explicitly selected aggregate reference tables. It contains no HRS microdata, participant-level predictions, fitted model objects, identifier crosswalks or participant-level figures. The author selected MIT licensing and no separate code DOI. Public reviewer access remains pending completion of the repository review.
+Released for public code review on 5 October 2026. The author completed the primary, ML and diagnostic IPCW correction runs. Their released aggregate outputs were verified and integrated in the manuscript. This package contains code, artificial-data tests, variable metadata and explicitly selected aggregate reference tables. It contains no HRS microdata, participant-level predictions, fitted model objects, identifier crosswalks or participant-level figures. The author selected MIT licensing and no separate code DOI. The repository is publicly accessible.
 
 ## Choose the code version first
 
@@ -156,7 +156,7 @@ Both versions replace fixed path configuration and the archived verification-fil
 
 ## Author decisions still required
 
-The author selected a public GitHub release identified by tag and full commit hash, MIT licensing and no separate code DOI. Public access must still be verified once enabled. A local ZIP alone does not settle the [BMC software-and-code requirements](https://link.springer.com/brands/bmc/editorial-policies). The author team will supply final author metadata and submission declarations later. Corrected aggregate verification is complete. Public access verification and final manuscript author metadata remain open. The code audit cannot guarantee that no defect or reviewer criticism remains.
+The author selected a public GitHub release identified by tag and full commit hash, MIT licensing and no separate code DOI. The public release is identified by a Git tag and full commit hash. A local ZIP alone does not settle the [BMC software-and-code requirements](https://link.springer.com/brands/bmc/editorial-policies). The author team will supply final author metadata and submission declarations later. Corrected aggregate verification is complete. Final manuscript author metadata remain a separate author task. The code audit cannot guarantee that no defect or reviewer criticism remains.
 
 ## Recovery entry points
 
