@@ -2,7 +2,7 @@
 
 Analysis code accompanying **Does Prior Handgrip Strength Improve Mortality Prediction? A Comparison of Conventional and Machine Learning Models**.
 
-**Status: private author-review candidate, 5 October 2026.** Public reviewer access, an archival DOI and a reuse license have not yet been established. This repository contains the sanitized code package, not the manuscript workspace or its Git history. It is not a clinical prediction service.
+**Status: private author-review candidate, 5 October 2026.** Public reviewer access is not yet enabled. The author selected the MIT license and no separate code DOI. The release will be identified by its Git tag and full commit hash. This repository contains the sanitized code package, not the manuscript workspace or its Git history. It is not a clinical prediction service.
 
 ## Start here
 
@@ -33,6 +33,18 @@ Conditional ML intervals do not include full model-training uncertainty. No exte
 
 ## Version integrity
 
-The package is intentionally a subdirectory: package verification checks every file and rejects extra files, so Git metadata stays outside it. Run Python with -B to avoid adding bytecode caches inside the package. Do not edit or store outputs inside package/ unless intentionally preparing a newly reviewed version and updating its manifests.
+The package is intentionally a subdirectory: package verification checks every file and rejects extra files, so Git metadata stays outside it. Git attributes preserve byte-level hashes even when core.autocrlf is enabled. This is a file-integrity safeguard, not proof of Windows runtime support. Run Python with -B to avoid adding bytecode caches inside the package. Do not edit or store outputs inside package/ unless intentionally preparing a newly reviewed version and updating its manifests.
 
-No public reuse license is assigned yet. Choose the license and citation authors before public release. Do not cite an invented DOI. The final release must identify the exact corrected code version used for the reported results.
+The authored code and documentation are provided under the [MIT license](LICENSE), Copyright (c) 2026 Steffen Held. This does not relicense HRS data or third-party packages. No separate code DOI is planned. The final release must identify the exact corrected code version used for the reported results.
+
+## Code explanation and result checks
+
+[Annotated source views](docs/README.md) explain the central statistical implementation with additional inline review comments. The executable source is preserved byte for byte because historical recovery uses exact source identities. The views are verified against those source bytes and are not alternative runnable versions.
+
+[Corrected reported results](reported_results/README.md) and [independent arithmetic checks](audit/README.md) let reviewers check contrasts and multiplicity calculations without HRS records.
+
+## AI-assisted development
+
+OpenAI Codex (Astra 6) assisted with code development, documentation, and reproducibility checks, including detailed comments explaining analytical assumptions and implementation choices. The authors reviewed all AI-assisted outputs. Participant-level analyses were performed locally.
+
+Reproducibility checks refer to the specific tests described here. They do not imply independent reconstruction of all manuscript results from private data or guarantee error-free code.

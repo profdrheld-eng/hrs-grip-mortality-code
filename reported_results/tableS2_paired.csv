@@ -1,0 +1,41 @@
+comparison,contrast,model,target,arm,reference_model,metric,estimate,ci90_lower,ci90_upper
+Named model minus Weibull,model_minus_weibull,neural,current,original,weibull,auc,-0.000430339873311314,-0.00250702394066816,0.00166707427397033
+Named model minus Weibull,model_minus_weibull,neural,current,original,weibull,brier,0.000186083176932722,-0.000307417107942415,0.00068333627213616
+Named model minus Weibull,model_minus_weibull,xgboost,current,original,weibull,auc,-0.00770860528836892,-0.0110540297027099,-0.00429212544025529
+Named model minus Weibull,model_minus_weibull,xgboost,current,original,weibull,brier,0.00101118085038104,0.000379613449011982,0.00165411789915766
+Current + prior minus current,prior_minus_current,weibull,prior,original,weibull,auc,-0.000127979968058911,-0.00105407266187179,0.000775817351187087
+Current + prior minus current,prior_minus_current,weibull,prior,original,weibull,brier,0.00000841423468353475,-0.000138381868843069,0.000164608335918435
+Current + prior minus current,prior_minus_current,neural,prior,original,neural,auc,-0.000143768068765593,-0.000323010850143863,0.0000447078011731663
+Current + prior minus current,prior_minus_current,neural,prior,original,neural,brier,0.0000328252549256502,0.00000416049570496896,0.000060464952275254
+Named model minus Weibull,model_minus_weibull,neural,prior,original,weibull,auc,-0.000446127974017996,-0.00273607320942595,0.00197312713173808
+Named model minus Weibull,model_minus_weibull,neural,prior,original,weibull,brier,0.000210494197174838,-0.000307829474699478,0.000733331927658659
+Current + prior minus current,prior_minus_current,xgboost,prior,original,xgboost,auc,-0.000589151272019528,-0.00175125139390707,0.000567692761379516
+Current + prior minus current,prior_minus_current,xgboost,prior,original,xgboost,brier,0.0000101584612083178,-0.000268206725027699,0.000295969787497835
+Named model minus Weibull,model_minus_weibull,xgboost,prior,original,weibull,auc,-0.00816977659232954,-0.0118235470047127,-0.00450742353918422
+Named model minus Weibull,model_minus_weibull,xgboost,prior,original,weibull,brier,0.00101292507690583,0.000332327424586476,0.00171671637519301
+Augmented minus original,augmented_minus_original,weibull,current,augmented,weibull,auc,-0.00280104666934367,-0.00523017378035671,-0.000344260826025681
+Augmented minus original,augmented_minus_original,weibull,current,augmented,weibull,brier,0.000383267888224098,-0.000143456115635115,0.00092620533419489
+Augmented minus original,augmented_minus_original,neural,current,augmented,neural,auc,-0.00382372768916062,-0.00575122516277533,-0.00187314065841323
+Augmented minus original,augmented_minus_original,neural,current,augmented,neural,brier,0.00130763656828656,0.000814938974340925,0.0018030769570817
+Named model minus Weibull,model_minus_weibull,neural,current,augmented,weibull,auc,-0.00145302089312827,-0.00358648989266239,0.00073033569488011
+Named model minus Weibull,model_minus_weibull,neural,current,augmented,weibull,brier,0.00111045185699518,0.000580758069841962,0.00162409281374098
+Augmented minus original,augmented_minus_original,xgboost,current,augmented,xgboost,auc,-0.00477456946759536,-0.00814028621757368,-0.00147706682950882
+Augmented minus original,augmented_minus_original,xgboost,current,augmented,xgboost,brier,0.000579454214339456,-0.00006050811179454,0.00123535448103599
+Named model minus Weibull,model_minus_weibull,xgboost,current,augmented,weibull,auc,-0.00968212808662061,-0.013202883627203,-0.00597504345111444
+Named model minus Weibull,model_minus_weibull,xgboost,current,augmented,weibull,brier,0.0012073671764964,0.000523040730524143,0.00188222628498858
+Current + prior minus current,prior_minus_current,weibull,prior,augmented,weibull,auc,-0.000430860029966396,-0.00212711741796221,0.00127808903281208
+Current + prior minus current,prior_minus_current,weibull,prior,augmented,weibull,brier,0.0000553807222966468,-0.000194887912253778,0.000307072184161887
+Augmented minus original,augmented_minus_original,weibull,prior,augmented,weibull,auc,-0.00310392673125115,-0.00575591150354799,-0.000450973052526329
+Augmented minus original,augmented_minus_original,weibull,prior,augmented,weibull,brier,0.00043023437583721,-0.000133745068840984,0.00101095814880286
+Current + prior minus current,prior_minus_current,neural,prior,augmented,neural,auc,-0.000338464479936906,-0.00135737415561385,0.000675330115383688
+Current + prior minus current,prior_minus_current,neural,prior,augmented,neural,brier,0.0000120213592126467,-0.000140986821043379,0.000164735531069247
+Augmented minus original,augmented_minus_original,neural,prior,augmented,neural,auc,-0.00401842410033193,-0.00598225352236681,-0.00202820399825136
+Augmented minus original,augmented_minus_original,neural,prior,augmented,neural,brier,0.00128683267257355,0.000823005826661858,0.0017523315239221
+Named model minus Weibull,model_minus_weibull,neural,prior,augmented,weibull,auc,-0.00136062534309878,-0.00402944027275852,0.00133418925729583
+Named model minus Weibull,model_minus_weibull,neural,prior,augmented,weibull,brier,0.00106709249391118,0.0005077542116723,0.00161908561713311
+Current + prior minus current,prior_minus_current,xgboost,prior,augmented,xgboost,auc,-0.00267179610500801,-0.00552128834713575,0.000198748403817593
+Current + prior minus current,prior_minus_current,xgboost,prior,augmented,xgboost,brier,0.000471912572981459,0.0000267380674583503,0.000931443835490479
+Augmented minus original,augmented_minus_original,xgboost,prior,augmented,xgboost,auc,-0.00685721430058384,-0.0104598946164472,-0.00346070052257124
+Augmented minus original,augmented_minus_original,xgboost,prior,augmented,xgboost,brier,0.0010412083261126,0.000391568325502855,0.00170660836358847
+Named model minus Weibull,model_minus_weibull,xgboost,prior,augmented,weibull,auc,-0.0119230641616622,-0.0157714792270403,-0.00816424775702087
+Named model minus Weibull,model_minus_weibull,xgboost,prior,augmented,weibull,brier,0.00162389902718121,0.000904531032131165,0.00233514866087758

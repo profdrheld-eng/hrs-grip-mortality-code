@@ -1,0 +1,19 @@
+metric,delta,estimate,ci_lower,ci_upper,interval_contained,boundary_infimum,rule,interpretation
+auc,1e-04,-0.000317827198395126,-0.000902253169205844,0.00107731243011995,FALSE,0.00107731243011995,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+auc,2e-04,-0.000317827198395126,-0.000902253169205844,0.00107731243011995,FALSE,0.00107731243011995,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+auc,5e-04,-0.000317827198395126,-0.000902253169205844,0.00107731243011995,FALSE,0.00107731243011995,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+auc,0.001,-0.000317827198395126,-0.000902253169205844,0.00107731243011995,FALSE,0.00107731243011995,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+auc,0.002,-0.000317827198395126,-0.000902253169205844,0.00107731243011995,TRUE,0.00107731243011995,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+auc,0.005,-0.000317827198395126,-0.000902253169205844,0.00107731243011995,TRUE,0.00107731243011995,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+auc,0.01,-0.000317827198395126,-0.000902253169205844,0.00107731243011995,TRUE,0.00107731243011995,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+auc,0.02,-0.000317827198395126,-0.000902253169205844,0.00107731243011995,TRUE,0.00107731243011995,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+auc,0.05,-0.000317827198395126,-0.000902253169205844,0.00107731243011995,TRUE,0.00107731243011995,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+brier,1e-05,5.41962131990759e-05,-0.000370675599712974,0.000176224436513377,FALSE,0.000370675599712974,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+brier,2e-05,5.41962131990759e-05,-0.000370675599712974,0.000176224436513377,FALSE,0.000370675599712974,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+brier,5e-05,5.41962131990759e-05,-0.000370675599712974,0.000176224436513377,FALSE,0.000370675599712974,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+brier,1e-04,5.41962131990759e-05,-0.000370675599712974,0.000176224436513377,FALSE,0.000370675599712974,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+brier,2e-04,5.41962131990759e-05,-0.000370675599712974,0.000176224436513377,FALSE,0.000370675599712974,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+brier,5e-04,5.41962131990759e-05,-0.000370675599712974,0.000176224436513377,TRUE,0.000370675599712974,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+brier,0.001,5.41962131990759e-05,-0.000370675599712974,0.000176224436513377,TRUE,0.000370675599712974,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+brier,0.002,5.41962131990759e-05,-0.000370675599712974,0.000176224436513377,TRUE,0.000370675599712974,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold
+brier,0.005,5.41962131990759e-05,-0.000370675599712974,0.000176224436513377,TRUE,0.000370675599712974,ci_lower > -delta AND ci_upper < delta,Hypothetical margin; not a validated clinical threshold

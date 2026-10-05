@@ -1,8 +1,8 @@
 {
-  "DATA_ACCESS.md": "f981eb79f46358edcc08a3156f858881fd37bbf09581281be4f978e27798c765",
-  "README.md": "aca4fec928cfdd1c3e2fceff172c5bbd5632c473213f6b64907a75f3130aa9cc",
+  "DATA_ACCESS.md": "0d0d4a88baad53f73d243b17326dc78c52dc0b66314a9e3213cf0ca191bc3567",
+  "README.md": "0a0c2f523c83bd96e28ddf0dfb16a05c31e41f14f11802dde5122533d3d191a5",
   "SOURCE_MANIFEST.json": "7ea42869628eae4f398a279ce541a3662b0cda974107e4431f3db7d320ec5668",
-  "VERSION_STATUS.md": "4ce4cea900a096a78d95f3d9d8a8f97be8e24f5db4ddeeddef81e4587a5ac7fb",
+  "VERSION_STATUS.md": "cbfd7d4e15f3f012ff7f4132e2964c060e16486f1fa5a656389651419b508640",
   "build_local_package.py": "5e2f5f737f7095c91b77ee6fee8cb657be6d71b4c332758f09be1913b6a7b96c",
   "corrected_version/ipcw_correction.patch": "f7065d7d01b9b796258e8c12fbb3f5f23f2fe798739fa4fda92983c49786b439",
   "corrected_version/overlay/01_Aktuelles_Manuskript/manuskript_v2/build_package.py": "1acb507a9abaadc1eb66b16131b2bc31ac894daf8d70a478b25835afa9280948",
