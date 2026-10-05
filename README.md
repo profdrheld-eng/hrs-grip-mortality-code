@@ -48,3 +48,5 @@ The authored code and documentation are provided under the [MIT license](LICENSE
 OpenAI Codex (Astra 6) assisted with code development, documentation, and reproducibility checks, including detailed comments explaining analytical assumptions and implementation choices. The authors reviewed all AI-assisted outputs. Participant-level analyses were performed locally.
 
 Reproducibility checks refer to the specific tests described here. They do not imply independent reconstruction of all manuscript results from private data or guarantee error-free code.
+
+Release v1.0.1 adds the aggregate CSVs for Supplementary Tables S1, S5 and S6. [The supplementary CSV index](reported_results/README.md#supplementary-csv-completion-release-v101) locates all nine supplementary tables. Analytical source code and the v1.0.0 release are unchanged.
