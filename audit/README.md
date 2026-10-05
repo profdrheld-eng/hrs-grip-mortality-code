@@ -15,4 +15,4 @@ Use a new materialization destination. The additional R checks use only invented
 
 The result verifier checks released CSV hashes and arithmetic. Its six regression tests deliberately corrupt a contrast, Holm probability, model key, primary interval-containment flag or file bytes. Expected rejection also holds under Python optimization. It does not calculate new model fits, prove input measurement validity or validate conditional confidence-interval coverage.
 
-The scientific implementation inside package/ remains unchanged. Synthetic tests do not replace the author's real-data correction/replay checks. See the repository review report for scope and remaining limits.
+The scientific implementation inside package/ remains unchanged. Synthetic tests do not replace the author's real-data correction/replay checks. See [the repository review report](REVIEW.md) for scope and remaining limits.
