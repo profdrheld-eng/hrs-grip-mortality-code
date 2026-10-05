@@ -1,6 +1,6 @@
 # Handgrip history and mortality prediction
 
-Analysis code accompanying **Does Prior Handgrip Strength Improve Mortality Prediction? A Comparison of Conventional and Machine Learning Models**.
+Analysis code accompanying **Does Prior Handgrip Strength Improve Mortality Prediction Beyond Current Strength? A Comparison of Conventional and Machine Learning Models**.
 
 **Status: public research code, 5 October 2026.** The repository can be accessed without an invitation. The author selected the MIT license and no separate code DOI. The release is identified by its Git tag and full commit hash. This repository contains the sanitized code package, not the manuscript workspace or its Git history. It is not a clinical prediction service.
 
