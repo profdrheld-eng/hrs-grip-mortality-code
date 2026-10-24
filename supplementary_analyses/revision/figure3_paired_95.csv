@@ -1,0 +1,7 @@
+"fraction","contrast","model","target","arm","reference_model","metric","difference","ci_lower","ci_upper","confidence_level","interval_method","uncertainty"
+1,"prior_minus_current","weibull","prior","original","weibull","auc",-0.000127979968058911,-0.00122146916715185,0.00095087813975432,0.95,"basic","conditional_fixed_OOF_household_bootstrap"
+1,"prior_minus_current","weibull","prior","original","weibull","brier",8.41423468353475e-06,-0.000167558826400996,0.000193577934885533,0.95,"basic","conditional_fixed_OOF_household_bootstrap"
+1,"prior_minus_current","neural","prior","original","neural","auc",-0.000143768068765593,-0.000354219658111438,7.86646257654648e-05,0.95,"basic","conditional_fixed_OOF_household_bootstrap"
+1,"prior_minus_current","neural","prior","original","neural","brier",3.28252549256502e-05,-1.11964579882394e-06,6.5952564136825e-05,0.95,"basic","conditional_fixed_OOF_household_bootstrap"
+1,"prior_minus_current","xgboost","prior","original","xgboost","auc",-0.000589151272019528,-0.0019924473042716,0.000786534995448823,0.95,"basic","conditional_fixed_OOF_household_bootstrap"
+1,"prior_minus_current","xgboost","prior","original","xgboost","brier",1.01584612083178e-05,-0.000326849543148484,0.000354877653360687,0.95,"basic","conditional_fixed_OOF_household_bootstrap"

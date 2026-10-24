@@ -1,8 +1,12 @@
 # Handgrip history and mortality prediction
 
-Analysis code accompanying **Does Prior Handgrip Strength Improve Mortality Prediction Beyond Current Strength in Adults Aged 50 Years or Older? A Comparison of Conventional and Machine Learning Models**.
+Analysis code accompanying **Does prior handgrip strength improve five-year mortality prediction? A comparison of conventional and machine learning survival models in the Health and Retirement Study**.
 
 **Status: public research code, 5 October 2026.** The repository can be accessed without an invitation. The author selected the MIT license and no separate code DOI. The release is identified by its Git tag and full commit hash. This repository contains the sanitized code package, not the manuscript workspace or its Git history. It is not a clinical prediction service.
+
+## Additional analyses
+
+[Additional analyses and aggregate results](supplementary_analyses/README.md) provide Tables S11–S17, sex and descriptive exports, and post hoc diagnostics. They supplement the unchanged v1.0.1 package. Only code, reviewed aggregate results and artificial tests are included.
 
 ## Start here
 
@@ -45,8 +49,8 @@ The authored code and documentation are provided under the [MIT license](LICENSE
 
 ## AI-assisted development
 
-OpenAI Codex (Astra 6) assisted with code development, documentation, and reproducibility checks, including detailed comments explaining analytical assumptions and implementation choices. The authors reviewed all AI-assisted outputs. Participant-level analyses were performed locally.
+OpenAI Codex supported code development, reproducibility checks and documentation. The authors reviewed the final materials and retain responsibility. Participant-level analyses were performed locally.
 
 Reproducibility checks refer to the specific tests described here. They do not imply independent reconstruction of all manuscript results from private data or guarantee error-free code.
 
-Release v1.0.1 adds the aggregate CSVs for Supplementary Tables S1, S5 and S6. [The supplementary CSV index](reported_results/README.md#supplementary-csv-completion-release-v101) locates all nine supplementary tables. Analytical source code and the v1.0.0 release are unchanged.
+Release v1.0.1 adds the aggregate CSVs for Supplementary Tables S1, S5 and S6. [The supplementary CSV index](reported_results/README.md#supplementary-csv-completion-release-v101) locates all nine supplementary tables. The original analytical package and the v1.0.0 release remain unchanged. Additional analyses are provided separately above.

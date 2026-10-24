@@ -1,0 +1,10 @@
+Model,Prediction change,"Count, rounded","Proportion%,95%CI"
+Weibull splines,Absolute change >2percentagepoints,220,3.54 (3.10 to 3.99)
+Weibull splines,Increase >2percentagepoints,130,2.08 (1.74 to 2.43)
+Weibull splines,Decrease >2percentagepoints,90,1.46 (1.17 to 1.76)
+Neural AFT,Absolute change >2percentagepoints,SUPPRESSED,SUPPRESSED
+Neural AFT,Increase >2percentagepoints,SUPPRESSED,SUPPRESSED
+Neural AFT,Decrease >2percentagepoints,SUPPRESSED,SUPPRESSED
+XGBoost AFT,Absolute change >2percentagepoints,420,6.68 (6.06 to 7.31)
+XGBoost AFT,Increase >2percentagepoints,210,3.38 (2.91 to 3.83)
+XGBoost AFT,Decrease >2percentagepoints,210,3.30 (2.87 to 3.75)

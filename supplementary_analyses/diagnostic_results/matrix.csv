@@ -1,0 +1,3 @@
+"model","columns","rank","rank_status","condition","condition_status","variance_status"
+"current",14,14,"FULL_RANK",62.84,"COMPUTED","POSITIVE_DEFINITE"
+"prior",17,17,"FULL_RANK",84.69,"COMPUTED","POSITIVE_DEFINITE"

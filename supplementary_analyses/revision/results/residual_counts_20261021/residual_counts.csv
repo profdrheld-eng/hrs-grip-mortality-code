@@ -1,0 +1,5 @@
+"metric","count_rounded_10","published_rounded_reference","reference_comparison"
+"four_valid_2010","6020","6020","MATCH"
+"four_valid_2014","5920","5920","MATCH"
+"early_last_alive","180","180","MATCH"
+"early_horizon_overlap","60","60","MATCH"

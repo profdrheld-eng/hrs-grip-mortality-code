@@ -1,0 +1,9 @@
+Summary,Group or transition,"n, rounded",Pearson r
+A:2010/2014Pearson correlation,Overall,6310,0.879
+A:2010/2014Pearson correlation,Male,2630,0.764
+A:2010/2014Pearson correlation,Female,3680,0.767
+B:2010→2014strength category,All transitions,6310,—
+B:2010→2014strength category,Not-low → not-low,5630,—
+B:2010→2014strength category,Not-low → low,380,—
+B:2010→2014strength category,Low → not-low,120,—
+B:2010→2014strength category,Low → low,180,—

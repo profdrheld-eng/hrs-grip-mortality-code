@@ -1,3 +1,6 @@
 # These files have byte-level provenance hashes. Never normalize their line endings.
 /package/** -text
 /reported_results/** -text
+
+/supplementary_analyses/** -text
+/supplementary_analyses/**/*.csv whitespace=cr-at-eol

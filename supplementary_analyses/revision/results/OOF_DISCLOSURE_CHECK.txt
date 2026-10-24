@@ -1,0 +1,3 @@
+PASS: complementary suppression checked for all three linked risk-change categories.
+Counts, proportions and intervals are jointly suppressed when any original linked category was suppressed.
+No model refit or HRS individual-data access was needed.

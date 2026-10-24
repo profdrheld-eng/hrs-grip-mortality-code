@@ -1,0 +1,7 @@
+Added−reference comparison,Evaluation group or contrast,ΔAUC (95%CI),ΔBrier (95%CI)
+Both-grip model − current-grip model,Male,-0.00025 (-0.00144 to 0.00242),0.00025 (-0.00041 to 0.00049)
+Both-grip model − current-grip model,Female,-0.00057 (-0.00196 to 0.00233),-0.00006 (-0.00072 to 0.00017)
+Both-grip model − current-grip model,Female increment − male increment,-0.00032 (-0.00311 to 0.00285),-0.00031 (-0.00094 to 0.00048)
+Sex×both-grip model − sex×current model,Male,-0.00011 (-0.00187 to 0.00316),0.00031 (-0.00071 to 0.00052)
+Sex×both-grip model − sex×current model,Female,-0.00189 (-0.00322 to 0.00239),-0.00003 (-0.00083 to 0.00020)
+Sex×both-grip model − sex×current model,Female increment − male increment,-0.00177 (-0.00510 to 0.00304),-0.00034 (-0.00103 to 0.00066)
