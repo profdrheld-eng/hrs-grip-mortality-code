@@ -112,7 +112,7 @@ local_main <- function(args,here) {
   if(!requireNamespace('survival',quietly=TRUE))stop('survival missing; no installation attempted.')
   impl<-args[3];scripts<-file.path(impl,'analysis-work/02_Analyse/scripts')
   auxiliary<-c('../revision/a1_sex_20261021/export_a1_sex.R'='a66429be18ac4e81e7e61dec5fce6c7f',
-    '../revision/scripts/hrs_review_analyses.R'='ac8b85a58d3d62f2e6654e0263c579bc',
+    '../revision/scripts/hrs_review_analyses.R'='98bebbca32c991f7d10208c6003b37fb',
     'verification/check_existing_primary_parameters.R'='a2cdea29cdb90302e7dbfe0c5f85ed3f')
   stopifnot(identical(unname(tools::md5sum(file.path(impl,names(auxiliary)))),unname(auxiliary)))
   env<-new.env(parent=globalenv());sys.source(file.path(impl,names(auxiliary)[1]),envir=env)

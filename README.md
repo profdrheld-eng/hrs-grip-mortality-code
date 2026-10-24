@@ -6,7 +6,7 @@ Analysis code accompanying **Does prior handgrip strength improve five-year mort
 
 ## Additional analyses
 
-[Additional analyses and aggregate results](supplementary_analyses/README.md) provide Tables S11–S17, sex and descriptive exports, and post hoc diagnostics. They supplement the unchanged v1.0.1 package. Only code, reviewed aggregate results and artificial tests are included.
+[Additional analyses and aggregate results](supplementary_analyses/README.md) provide Tables S11–S17, sex and descriptive exports, and post hoc diagnostics. They supplement release v1.0.1. Only code, reviewed aggregate results and artificial tests are included.
 
 ## Start here
 
@@ -49,8 +49,8 @@ The authored code and documentation are provided under the [MIT license](LICENSE
 
 ## AI-assisted development
 
-OpenAI Codex supported code development, reproducibility checks and documentation. The authors reviewed the final materials and retain responsibility. Participant-level analyses were performed locally.
+OpenAI Codex supported analysis coding, reproducibility checks and documentation. The authors reviewed all AI-assisted content and retain responsibility. Participant-level analyses were performed locally without AI processing of participant-level data.
 
 Reproducibility checks refer to the specific tests described here. They do not imply independent reconstruction of all manuscript results from private data or guarantee error-free code.
 
-Release v1.0.1 adds the aggregate CSVs for Supplementary Tables S1, S5 and S6. [The supplementary CSV index](reported_results/README.md#supplementary-csv-completion-release-v101) locates all nine supplementary tables. The original analytical package and the v1.0.0 release remain unchanged. Additional analyses are provided separately above.
+Release v1.0.1 adds the aggregate CSVs for Supplementary Tables S1, S5 and S6. [The supplementary CSV index](reported_results/README.md#supplementary-csv-completion-release-v101) locates all nine supplementary tables. The original analytical source and the v1.0.0 release remain unchanged. Additional analyses are provided separately above.

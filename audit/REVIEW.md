@@ -4,7 +4,7 @@
 
 One confirmed repository portability defect was reproduced: Git automatic newline conversion invalidated the strict package hashes on checkout. Two documentation/traceability weaknesses were also repaired: missing current corrected aggregate reporting references and insufficiently explicit core-code explanation. No new error in the inspected core statistical calculations was established by the additional checks. This is not an absolute guarantee of error freedom, clinical validity or acceptance.
 
-The review covers the actual GitHub revision 13a446ca739fd99185e4dbe1c88ec1d42c5a3223 and its targeted revision. It is a focused scientific/code review by the same assistant, not a separate human computer scientist or independent full raw-data replication.
+The review covers the actual GitHub revision 13a446ca739fd99185e4dbe1c88ec1d42c5a3223 and its targeted revision. The checks assessed code portability, traceability and aggregate calculations; they did not repeat the participant-level analyses.
 
 ## R2-REPO-05: newline conversion invalidates provenance, substantial, confirmed defect
 

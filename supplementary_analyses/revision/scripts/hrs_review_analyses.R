@@ -1,4 +1,4 @@
-# Review-requested analyses. Pure functions, no data import or automatic execution.
+# Exploratory analyses. Pure functions, no data import or automatic execution.
 # Source existing corrected survival helpers before calling model/validation functions.
 review_formulas <- function() {
   base <- survival::Surv(lo,hi,type='interval2') ~ splines::ns(age,df=3)+sex+smoke+health

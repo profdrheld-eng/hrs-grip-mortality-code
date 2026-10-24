@@ -138,7 +138,7 @@ review_private_main <- function(args,directory) {
   write.csv(data.frame(file=basename(input_sources),md5=hashes),file.path(share,'source_hashes.csv'),row.names=FALSE)
   writeLines(c(paste('R',getRversion()),paste('survival',utils::packageVersion('survival')),
     'Seed 20261019; 200 outer x 50 inner household bootstrap; fixed eight model formulas.',
-    'New analyses were requested after the original findings were known.',
+    'Additional exploratory analyses followed the original results.',
     'A1-A5 outputs provided; A5 uses real held-out predictions with reproduced reference metrics.',
     'No claims about clinical equivalence, screening frequency or causality.'),file.path(share,'README.txt'))
   writeLines(if(all(validation$metrics$status=='OK'))

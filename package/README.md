@@ -154,18 +154,6 @@ python3 01_Aktuelles_Manuskript/manuskript_v2/build_package.py /path/to/old-aggr
 
 Both versions replace fixed path configuration and the archived verification-file input with CLI arguments. The corrected version additionally enforces runtime validation regardless of Python optimization and rejects invalid contrast values. Valid synthetic output tables were compared byte for byte with the preserved legacy builders. A failed table build can leave partial files in its new output directory. Use only a successfully completed build whose validation output you have checked. The original input naming is preserved: `table1.csv`, `prognosekennzahlen.csv` (primary `validated_metrics.csv`), `veraenderung_kurve.csv` (change `risk_curve.csv`), `vorgeschichte_kurve.csv` (history `risk_curve.csv`), and `grenzenraster.csv` (primary `margin_sensitivity.csv`). The `inference` and `full-ml` input names are those created by the ML scripts. The bundled prior verification JSON documents historical arithmetic only; it does not validate corrected outputs. This builder contains historical captions and does not recreate every later editorial adjustment in the final manuscript. Compare generated table cells with the accepted tables before replacing any document.
 
-## Author decisions still required
+## Citation and license
 
-The author selected a public GitHub release identified by tag and full commit hash, MIT licensing and no separate code DOI. The public release is identified by a Git tag and full commit hash. A local ZIP alone does not settle the [BMC software-and-code requirements](https://link.springer.com/brands/bmc/editorial-policies). The author team will supply final author metadata and submission declarations later. Corrected aggregate verification is complete. Final manuscript author metadata remain a separate author task. The code audit cannot guarantee that no defect or reviewer criticism remains.
-
-## Recovery entry points
-
-After materializing corrected_version, run from the materialized project root. Private input paths must be supplied by the authorized user.
-
-```sh
-Rscript 02_Analyse/scripts/hrs_ipcw_primary_refresh.R DATA_DIR OUTPUT_PARENT AUDIT_SEND_BACK
-Rscript 02_Analyse/scripts/hrs_ipcw_ml_refresh.R DATA_DIR OUTPUT_PARENT HISTORICAL_FULL_DIR HISTORICAL_INFERENCE_DIR AUDIT_SEND_BACK
-Rscript 02_Analyse/scripts/hrs_ipcw_diagnostics_refresh.R DATA_DIR OUTPUT_PARENT HISTORICAL_DIAGNOSTICS_DIR AUDIT_SEND_BACK
-```
-
-The recovery tools verify the exact historical sources and versions. They intentionally stop on mismatches. Share only their SEND_BACK aggregates. These entry points do not provide a generic replacement for the original model-development pipeline.
+Cite the repository version identified in the manuscript. Code is distributed under MIT. HRS data remain subject to their conditions of use.

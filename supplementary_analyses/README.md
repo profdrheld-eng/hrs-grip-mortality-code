@@ -45,4 +45,4 @@ Rscript --vanilla supplementary_analyses/revision/a1_sex_20261021/test_a1_sex_ex
 Rscript --vanilla supplementary_analyses/implementation/patches/local_completion119/test_local_checks.R supplementary_analyses/implementation/patches/local_completion119
 ```
 
-AI tools supported code development, reproducibility checks and documentation. The authors reviewed the final materials and retain responsibility. Code uses the repository MIT license; HRS data conditions remain separate. FILE_SHA256.json records file identities.
+OpenAI Codex supported analysis coding, reproducibility checks and documentation. The authors reviewed all AI-assisted content and retain responsibility for the released materials. Code uses the repository MIT license; HRS data conditions remain separate. FILE_SHA256.json records file identities.
